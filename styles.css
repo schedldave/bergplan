@@ -230,6 +230,76 @@ section.intro p strong { color: var(--c-ink); }
 .see-badge { background: #d6e6dd; color: #1f5037; }
 .wish-badge { background: #ffe8b3; color: #8a5a00; }
 .tech-badge { background: #fadcd6; color: #a13a25; }
+.rec-badge { background: #2c6e49; color: #ffffff; }
+
+/* recommended option of the day */
+.opt.rec {
+  border-left: 4px solid #2c6e49;
+  background: #f3faf5;
+  box-shadow: 0 1px 0 rgba(44, 110, 73, 0.12);
+}
+.opt.rec.see { border-left-color: #2c6e49; }
+.opt.final.rec {
+  border-left-color: #b07c00;
+  background: #fff8e0;
+}
+
+/* red line */
+.redline {
+  background: linear-gradient(180deg, #f9f5ea 0%, #fffaf0 100%);
+  border-left: 4px solid #b6562d;
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.redline h2 { color: #b6562d; margin-top: 0; }
+.redline-text {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--c-ink);
+}
+
+/* go/no-go */
+.gonogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.gonogo-grid > div {
+  background: var(--c-paper);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.gonogo-grid h3 { margin: 0 0 8px; font-size: 17px; }
+.gonogo-grid ul { padding-left: 18px; margin: 0; color: var(--c-mute); font-size: 14.5px; }
+.gonogo-grid li { margin-bottom: 6px; }
+.gonogo-grid .go { border-left: 4px solid #2c6e49; }
+.gonogo-grid .go h3 { color: #2c6e49; }
+.gonogo-grid .nogo { border-left: 4px solid #a13a25; }
+.gonogo-grid .nogo h3 { color: #a13a25; }
+.gonogo-grid .route { border-left: 4px solid #b07c00; }
+.gonogo-grid .route h3 { color: #b07c00; }
+.gonogo-grid .route p { margin: 0; color: var(--c-mute); font-size: 14.5px; }
+
+/* packing list */
+.pack-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+}
+.pack-grid li {
+  background: var(--c-paper);
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  font-size: 14.5px;
+  color: var(--c-ink);
+}
 
 /* legend */
 .legend-grid {
